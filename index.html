@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+    <title>Web worker tests</title>
+    <style>
+        .flex-parent{display: flex;flex-direction: row;flex-wrap: wrap;}
+        .inFile {background: #d144ff;}
+        .afterLoad {background: #dc774c;}
+        .afterLoad {background: #dc774c;}
+        .WA {background: #bada55;}
+        .WB {background: #4cbadc;}
+        .WC {background: #e75f7b;}
+        .WD {color: #ffffff; background: #575986;}
+        .WE {color: #ffffff; background: #77694c;}
+    </style>
 </head>
 <body>
-<h1>Just a title :)</h1>
-<h3>Example of multiple workers doing multiple tasks</h3>
+<h3>Visual representation of multiple web workers doing parallel jobs</h3>
 <h3>Open the console to see the messages left by each worker.</h3>
-<h2>Try it a few times because workers may run w/o intersecting at all.</h2>
-<script type="text/javascript" src="main.js"></script>
+<h3>Try it a few times because workers may run w/o intersecting at all.</h3>
+<div class="flex-parent">
+</div>
+<script type="module" src="main.js"></script>
 </body>
 </html>
